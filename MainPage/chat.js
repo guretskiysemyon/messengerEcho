@@ -16,7 +16,6 @@ function openFile() {
     document.getElementById("boxBack").classList.add("show");
 }
 
-
 function sendMessage(msg) {
     var time = new Date();
     var current = time.getHours() + ":" + time.getMinutes();
@@ -28,7 +27,6 @@ function sendMessage(msg) {
         document.getElementById("input-msg").value = "";
     }
 }
-
 
 function send() {
     var msg = document.getElementById("input-msg").value;
@@ -92,7 +90,6 @@ function startRecordingAudio(mediaRecorder) {
 }
 
 function recordVoice() {
-    // set up basic variables for app
     document.getElementById("boxBackAudio").classList.add("show");
     const record = document.getElementById("startAudioBtn");
     const stop = document.getElementById("stopAudioBtn");
@@ -151,5 +148,4 @@ function recordVoice() {
             }
         }
     });
-    console.log(recordedAudio.value);
 }

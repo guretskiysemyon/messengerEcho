@@ -52,9 +52,6 @@ html,
   background-color: linear-gradient(#220C37, #341454, #8F0ABE);
 }
 
-
-
-/* Popup container - can be anything you want */
 .sentAnotherObjects {
   background-color: rgba(119, 2, 129, 0.493);;
   border-radius: 5px;
@@ -67,7 +64,6 @@ html,
   user-select: none;
 }
 
-/* The actual popup */
 .sentAnotherObjects .anotherFunctions {
   visibility: hidden;
   width: 160px;
@@ -83,7 +79,6 @@ html,
   margin-left: -80px;
 }
 
-/* Popup arrow */
 .sentAnotherObjects .anotherFunctions::after {
   content: "";
   position: absolute;
@@ -96,14 +91,12 @@ html,
   border-color: rgba(119, 2, 129, 0.493) transparent transparent transparent;
 }
 
-/* Toggle this class - hide and show the popup */
 .sentAnotherObjects .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
-/* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -184,12 +177,12 @@ li div {
   padding-bottom: 20px;
   color: white;
   position: relative;
+  display: inline-block;
 }
 
 li div img {
   max-width: 600px;
 }
-
 
 
 .message .left div {
@@ -351,13 +344,13 @@ li div span::after {
 }
 
 .list-group::-webkit-scrollbar-track {
-  background: none;        /* color of the tracking area */
+  background: none; 
 }
 
 .list-group::-webkit-scrollbar-thumb {
-  background-color: #A63EC5;    /* color of the scroll thumb */
-  border-radius: 10px;       /* roundness of the scroll thumb */
-  border: none;  /* creates padding around scroll thumb */
+  background-color: #A63EC5;  
+  border-radius: 10px;    
+  border: none;  
 }
 
 .list-group-item {
