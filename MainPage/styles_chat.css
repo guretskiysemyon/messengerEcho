@@ -1,0 +1,375 @@
+body,
+html,
+#main,
+.chat {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+#left {
+  height: 100%;
+  background: #301744;
+}
+
+#right {
+  background: linear-gradient(#220C37, #341454, #8F0ABE);
+  background-color: black;
+  height: 100%;
+}
+
+.top-row {
+  background: rgba(43, 40, 40, 0.5);
+  color: white;
+  border-radius: 25px;
+  height: 10%;
+  margin: 0;
+}
+
+.bottom-row {
+  height: 90%;
+  margin: 0;
+}
+
+.top-chat {
+  height: 90%;
+  margin: 0;
+}
+
+.bottom-chat {
+  height: 10%;
+  margin: 0;
+}
+
+#input-msg {
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border-color: #220C37;
+  background-color:  #1f0025;
+}
+
+#button-addon2 {
+  background-color: linear-gradient(#220C37, #341454, #8F0ABE);
+}
+
+
+
+/* Popup container - can be anything you want */
+.sentAnotherObjects {
+  background-color: rgba(119, 2, 129, 0.493);;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.sentAnotherObjects .anotherFunctions {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgba(119, 2, 129, 0.493);;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.sentAnotherObjects .anotherFunctions::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  background-color: rgba(119, 2, 129, 0.493);
+  border-color: rgba(119, 2, 129, 0.493) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.sentAnotherObjects .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.chat-window {
+  align-items: center;
+  height: 100%;
+  padding: 10px 20px;
+  padding-right: 5%;
+  overflow-y: scroll;
+}
+
+
+.form-control::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.form-control::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5px linear-gradient(#220C37, #341454, #8F0ABE);
+}
+
+.form-control::-webkit-scrollbar-thumb {
+  background-color: linear-gradient(#220C37, #341454, #8F0ABE);
+  border-radius: 0.5px;
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+
+.chat-window::-webkit-scrollbar {
+  width: 1em;
+}
+
+.chat-window::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background-color: linear-gradient(#220C37, #341454, #8F0ABE);
+  border-radius: 25px;
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+.message {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  align-content: center;
+}
+
+li div {
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  position: relative;
+}
+
+li div img {
+  max-width: 600px;
+}
+
+
+
+.message .left div {
+  border-color: rgba(255, 0, 255, 0.3);
+  text-align: left;
+  background-color: rgba(255, 0, 255, 0.3);
+  border-bottom-left-radius: 0;
+  width: fit-content;
+  float: left;
+}
+
+.message .right div {
+  border-color: rgba(0, 162, 255, 0.5);
+  text-align: right;
+  background-color: rgba(0, 162, 255, 0.5);
+  width: fit-content;
+  border-bottom-right-radius: 0;
+  float: right;
+}
+
+.left::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.right::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+li div span::after {
+  content: '';
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  bottom: 0;
+}
+
+.left div span::after {
+  left: 0;
+  transform: translateX(-100%);
+  background: radial-gradient(circle at 0 0, transparent, transparent 72%, rgba(255, 0, 255, 0.3) 72%);
+}
+
+.right div span::after {
+  right: 0;
+  transform: translateX(100%);
+  background: radial-gradient(circle at 100% 0, transparent, transparent 72%, rgba(0, 162, 255, 0.5) 72%);
+
+}
+
+.time {
+  color: goldenrod;
+}
+
+
+.top-row {
+  padding: 5px;
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+  text-shadow: goldenrod;
+  color: white;
+  background-color:rgba(255, 0, 179, 0.425);
+  opacity: 70%;
+}
+
+.friend-info span {
+  padding-left: 10px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
+#boxBack, #boxBackAudio {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#boxBack.show, #boxBackAudio.show {
+  display: block;
+}
+
+#boxWrap, #boxWrapAudio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+  max-width: 600px;
+  padding: 10px;
+  background: rgb(248, 237, 237);
+}
+
+#search-friends {
+  color:white;
+  width: 60%;
+  background: #301744;
+  border: none;
+  border-radius: 2px;
+}
+
+.bar{
+  margin: 0 0 1px 0;
+  height: 100%;
+  background: #660066;
+}
+
+#chats-row {
+  height: 15%;
+  background-color: #660066;
+  opacity: 100%;
+}
+
+.search {
+    color: white;
+    background: #301744;
+    border-radius: 2px;
+}
+
+#friends-window {
+  height: 80%;
+  background-color: #660066;
+  opacity: 100%;
+  margin-top: 5%;
+  border-radius: 25px;
+}
+#friends-list {
+    height: 100%;
+    padding: 10%;
+}
+
+#friends-list .list-group {
+  width: 100%;
+  height:100%;
+  line-height: 2em;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.list-group::-webkit-scrollbar{
+  width: 5px;
+}
+
+.list-group::-webkit-scrollbar-track {
+  background: none;        /* color of the tracking area */
+}
+
+.list-group::-webkit-scrollbar-thumb {
+  background-color: #A63EC5;    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+  border: none;  /* creates padding around scroll thumb */
+}
+
+.list-group-item {
+  color: white;
+  margin: 1px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 3%;
+
+}
+
+.list-group-item:hover {
+  background: #A63EC5;
+}
