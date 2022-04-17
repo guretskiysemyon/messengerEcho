@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Title</title>
+    <style>
+        body{
+            background: #341454;
+        }
+        .row{
+            --bs-gutter-x:0;
+            padding: 0;
+            width: 100%;
+        }
+        .bar{
+            margin: 0;
+            width: 100%;
+            height: 125px;
+            background: #220C37;
+        }
+
+        .logo{
+            text-align-all: left;
+            height: 100%;
+        }
+
+        .form{
+            margin-top: 5%;
+
+            color:white;
+
+        }
+        .form-content{
+            height: 300px;
+            padding-top: 25px;
+            background: #220C37;
+            opacity: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-control,.log-in-but{
+            margin:  auto;
+            width: 70%;
+        }
+
+        .btn{
+            width: 80px;
+            background-image: linear-gradient(to right, #FF008E, #8F0ABE, #0012B8);
+            border-radius: 5px;
+            border: none;
+        }
+
+        .another-options{
+            margin-top: 50px;
+        }
+
+        #boxBack {
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        #boxBack.show {
+            display: block;
+        }
+
+        #boxWrap {
+            height: 150px;
+            width: 150px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 320px;
+            max-width: 600px;
+            padding: 10px;
+            background: #341454;
+        }
+        .btn-box{
+            margin-top: 20px;
+        }
+
+        a:hover{
+            color: black;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="bar">
+        <img class="logo" src="images/logo.png">
+    </div>
+</div>
+<div class="row form justify-content-center">
+    <div class="form-content  col-md-4 border border-dark">
+        <div class="mb-3">
+            <input type="text" id="username" class="form-control" placeholder="username@">
+        </div>
+        <div class="mb-3">
+            <input type="text" id="nickname" class="form-control" placeholder="Nickname">
+        </div>
+        <div class="mb-3">
+            <input type="password" id="password" class="form-control"  placeholder="password">
+        </div>
+        <div class="mb-3">
+            <input type="password" id="check-pswrd" class="form-control"  placeholder="repeat your password">
+        </div>
+        <div class="log-in-but text-center">
+            <button type="button" id="btn" onclick="signUp()" class="btn">Sign Up</button>
+        </div>
+    </div>
+    <div class="another-options text-center text-decoration-underline">
+        <p>
+            <a href="Login.html">Have an account?</a>
+        </p>
+    </div>
+</div>
+<div id="boxBack" class="logo-text">
+    <div id="boxWrap" class="rounded text-center">
+        <div id="boxTxt" class="container-fluid"></div>
+        <input type="button" class="btn btn-box"  value="ok" onclick="msgBox()">
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="login.js"></script>
+</body>
+</html>
