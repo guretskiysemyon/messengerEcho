@@ -12,7 +12,9 @@
    * _log in_
 ![log_in](https://user-images.githubusercontent.com/92333588/165582475-838d90e9-308c-4924-98b6-c49f0be3fdd1.png)
    * _chat_
-![chat](https://user-images.githubusercontent.com/92333588/165583879-a2800baf-21b5-4e05-a7eb-ffee6601655f.png)
+* (You can log in with name 'Bodek' and password 'ww2' to see the chats with messages with another users.)
+![chat](https://user-images.githubusercontent.com/92333588/165797870-fefb1bfa-a36e-46af-aadf-b3db74c7e265.png)
+
 
 ---
 In this app you can add contacts
