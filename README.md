@@ -2,7 +2,7 @@
 ***
 ## **instruction:**
 
-* first, you need to install _React Bootstrap, React Router._
+* first, you need to install _react-bootstrap, rect-router_
 * open new react app and place there 'src' and 'public' folders from repos to your app and run.
 * **pages info:**
    * _start page_
